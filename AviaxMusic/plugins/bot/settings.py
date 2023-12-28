@@ -39,7 +39,7 @@ from config import BANNED_USERS, OWNER_ID
 
 
 @app.on_message(
-    filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
+    filters.command(["vcsettings", "vcsetting"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def settings_mar(client, message: Message, _):
